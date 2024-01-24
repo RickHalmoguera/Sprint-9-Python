@@ -1,0 +1,345 @@
+[
+    {
+      "id": 1,
+      "photos": [
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk",
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU",
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs"
+      ],
+      "room_type": "Suite",
+      "room_number": "Suite-1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": true,
+      "price_night": 350,
+      "discount": 10,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "available"
+    },
+    {
+      "id": 2,
+      "photos": [
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU",
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs",
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk"
+      ],
+      "room_type": "Single Bed",
+      "room_number": "Single Bed-2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": false,
+      "price_night": 100,
+      "discount": 0,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "booked"
+    },
+    {
+      "id": 3,
+      "photos": [
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs",
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk",
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU"
+      ],
+      "room_type": "Double Bed",
+      "room_number": "Double Bed-3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": true,
+      "price_night": 200,
+      "discount": 20,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "available"
+    },
+    {
+      "id": 4,
+      "photos": [
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk",
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU",
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs"
+      ],
+      "room_type": "Double Superior",
+      "room_number": "Double Superior-4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": false,
+      "price_night": 250,
+      "discount": 0,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "booked"
+    },
+    {
+      "id": 5,
+      "photos": [
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs",
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk",
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU"
+      ],
+      "room_type": "Suite",
+      "room_number": "Suite-5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": true,
+      "price_night": 350,
+      "discount": 10,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "available"
+    },
+    {
+      "id": 6,
+      "photos": [
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU",
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs",
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk"
+      ],
+      "room_type": "Single Bed",
+      "room_number": "Single Bed-6",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": false,
+      "price_night": 100,
+      "discount": 0,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "booked"
+    },
+    {
+      "id": 7,
+      "photos": [
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs",
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk",
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU"
+      ],
+      "room_type": "Double Bed",
+      "room_number": "Double Bed-7",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": true,
+      "price_night": 200,
+      "discount": 20,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "available"
+    },
+    {
+      "id": 8,
+      "photos": [
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk",
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU",
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs"
+      ],
+      "room_type": "Double Superior",
+      "room_number": "Double Superior-8",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": false,
+      "price_night": 250,
+      "discount": 0,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "booked"
+    },
+    {
+      "id": 9,
+      "photos": [
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs",
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk",
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU"
+      ],
+      "room_type": "Suite",
+      "room_number": "Suite-9",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": true,
+      "price_night": 350,
+      "discount": 10,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "available"
+    },
+    {
+      "id": 10,
+      "photos": [
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU",
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs",
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk"
+      ],
+      "room_type": "Single Bed",
+      "room_number": "Single Bed-10",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": false,
+      "price_night": 100,
+      "discount": 0,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "booked"
+    },
+    {
+      "id": 11,
+      "photos": [
+        "https://unsplash.com/photos/woman-lying-on-bed-facing-on-body-of-water-RiOhen_OLPs",
+        "https://unsplash.com/photos/white-bed-linen-with-brown-wooden-bed-frame-67-sOi7mVIk",
+        "https://unsplash.com/photos/white-ceramic-sink-near-white-ceramic-sink-g51F6-WYzyU"
+      ],
+      "room_type": "Double Bed",
+      "room_number": "Double Bed-11",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "offer": true,
+      "price_night": 200,
+      "discount": 20,
+      "cancellation": "Lorem ipsum dolor sit amet.",
+      "amenities": [
+        "Air conditioner",
+        "Breakfast",
+        "Cleaning",
+        "Grocery",
+        "Shop near",
+        "24/7 Online Support",
+        "Smart Security",
+        "High-speed WiFi",
+        "Kitchen",
+        "Shower",
+        "Towels",
+        "Strong Locker",
+        "Expert Team"
+      ],
+      "status": "available"
+    }
+]
+       
+  
