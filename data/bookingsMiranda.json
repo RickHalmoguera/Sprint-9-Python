@@ -1,0 +1,8 @@
+[{"id":1,"first_name":"Nicolas","last_name":"Scoyne","date_in":"2024-01-05T21:23:11Z","date_out":"2024-01-12T14:56:12Z","status":"check out","room_id":1},
+{"id":2,"first_name":"Amerigo","last_name":"Devey","date_in":"2024-01-04T09:01:31Z","date_out":"2024-01-11T10:50:33Z","status":"check out","room_id":2},
+{"id":3,"first_name":"Angel","last_name":"Burcombe","date_in":"2024-01-03T21:42:45Z","date_out":"2024-01-10T23:20:38Z","status":"check out","room_id":3},
+{"id":4,"first_name":"Deidre","last_name":"Danilchev","date_in":"2024-01-02T07:28:39Z","date_out":"2024-01-10T04:24:33Z","status":"check out","room_id":4},
+{"id":5,"first_name":"Galvan","last_name":"Dumphy","date_in":"2024-01-04T04:26:24Z","date_out":"2024-01-12T15:43:24Z","status":"check out","room_id":5},
+{"id":6,"first_name":"Alric","last_name":"Hendren","date_in":"2024-01-02T01:23:14Z","date_out":"2024-01-12T02:43:06Z","status":"check out","room_id":6},
+{"id":7,"first_name":"Mada","last_name":"O'Daly","date_in":"2024-01-03T12:10:09Z","date_out":"2024-01-11T13:12:15Z","status":"check out","room_id":7},
+{"id":8,"first_name":"John","last_name":"Peterson","date_in":"2024-01-03T12:10:09Z","date_out":"2025-01-11T13:12:15Z","status":"in progress","room_id":8}]

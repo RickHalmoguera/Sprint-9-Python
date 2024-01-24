@@ -79,3 +79,9 @@ class Users(Model):
 
 class Comments(Model):
     path= "../data/commentsMiranda.json"
+    
+class Bookings(Model):
+    path= "../data/bookingsMiranda.json"
+    
+class Rooms(Model):
+    path= "../data/roomsMiranda.json"
