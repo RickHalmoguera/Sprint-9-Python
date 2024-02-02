@@ -4,17 +4,19 @@ from models.models import Users
 
 
 parser = argparse.ArgumentParser(
-    prog="Pyhton App",
-    description= "Manipulate Data from MySQL")
-parser.add_argument("action", choices=["list_users","view_user","create_user","update_user","list_comments","view_comment","list_rooms","view_room","list_bookings","view_booking"])
+    prog='Pyhton App',
+    description= 'Manipulate Data from MySQL')
+parser.add_argument('action', choices=['list_users','view_user','create_user','update_user','delete_user'])
 
 args = parser.parse_args()
 
+user_choice = args.action
 actions={
-    'list_users': Users.list(),
-    'view_user' : Users.view()
+    'list_users': Users.list,
+    'view_user' : Users.view,
+    'delete_user': Users.delete
 }
 
-if args in actions:
-    actions[args]()
+if user_choice in actions:
+    actions[user_choice]()
     

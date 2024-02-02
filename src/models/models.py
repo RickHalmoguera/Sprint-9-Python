@@ -12,13 +12,14 @@ class Model(ABC):
         db = connectToDb()
         if db:
             try:
-                cursor = db.cursor()
+                cursor = db.cursor(dictionary=True)
                 cursor.execute(f'SELECT * FROM {cls.table}')
                 tableData = cursor.fetchall()
 
                 print(f'{cls.table} data:')
                 for row in tableData:
-                    print(row)
+                    for key, value in row.items():
+                            print(f'{key}: {value}')
 
             except Exception as e:
                 print(f'Cant show data from {cls.table} {e}')
@@ -38,10 +39,10 @@ class Model(ABC):
                 tableData = cursor.fetchall()
 
                 if tableData:
-                    print('Data {cls.table}: ')
-                for row in tableData:
-                    print(row)
-                    return row
+                    print(f'Data {cls.table}: ')
+                    for row in tableData:
+                        for key, value in row.items():
+                            print(f'{key}: {value}')
                 else:
                     input('Cant find this id')
 
@@ -69,6 +70,25 @@ class Model(ABC):
         
         print(new_user)
             
+    @classmethod
+    def delete(cls):
+        id = input('Id you want to delete: ')
+
+        connection = connectToDb()
+        if connection:
+            try:
+                cursor = connection.cursor()
+                cursor.execute(f'DELETE FROM {cls.table} WHERE id = {id}')
+                connection.commit()              
+                print(f'User {id} was deleted')
+
+            except Exception as e:
+                print(f'There was an error during process: {e}')
+
+            finally:
+                if connection.is_connected():
+                    connection.close()
+                    
 class Users(Model):
     table ="users"
 
