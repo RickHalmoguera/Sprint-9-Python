@@ -83,11 +83,37 @@ class Model(ABC):
             'job_title': input(f'Job Title: ({data_user['job_title']})') or data_user['job_title'],
             'email': input(f'Email: ({data_user['email']})') or data_user['email'],
             'phone': input (f'Phone: ({data_user['phone']})') or data_user['phone'],
-            'startDate': data_user['start_date'],
+            'start_date': data_user['start_date'],
             'description': input(f'Job description: ({data_user['description']})') or data_user['description'],
             'is_active': input(f'Is User Active: (Y/N) ({active_status})').upper() == 'Y' or data_user['is_active'],
             }
-        print(user)
+       
+     
+        
+        connection = connectToDb()
+        if connection:
+            try:
+                cursor = connection.cursor()
+
+                query = f'''
+                UPDATE {cls.table}
+                SET photo = %s, first_name = %s, last_name = %s, job_title = %s, email = %s, phone = %s,
+                start_date = %s, description = %s, is_active = %s
+                WHERE id = %s
+                '''
+                values = list(user.values()) + [id]
+                cursor.execute(query, values)
+                connection.commit()
+
+                print('Datos actualizados correctamente.')
+
+            except Exception as e:
+                print(f'Error al actualizar datos: {e}')
+
+            finally:
+                if connection.is_connected():
+                    connection.close()
+                    print('Conexión cerrada')
             
     @classmethod
     def delete(cls):
