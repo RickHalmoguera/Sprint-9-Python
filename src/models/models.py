@@ -43,6 +43,7 @@ class Model(ABC):
                     for row in tableData:
                         for key, value in row.items():
                             print(f'{key}: {value}')
+                    return row
                 else:
                     input('Cant find this id')
 
@@ -69,6 +70,24 @@ class Model(ABC):
         }
         
         print(new_user)
+        
+    @classmethod
+    def update(cls):
+        data_user = Users.view()
+        id = data_user['id']
+        active_status = 'YES' if data_user['is_active'] == 1 else 'NO'
+        user = {
+            'photo': data_user['photo'],
+            'first_name': input(f'First Name: ({data_user['first_name']})') or data_user['first_name'],
+            'last_name': input(f'Last Name: ({data_user['last_name']})') or data_user['last_name'],
+            'job_title': input(f'Job Title: ({data_user['job_title']})') or data_user['job_title'],
+            'email': input(f'Email: ({data_user['email']})') or data_user['email'],
+            'phone': input (f'Phone: ({data_user['phone']})') or data_user['phone'],
+            'startDate': data_user['start_date'],
+            'description': input(f'Job description: ({data_user['description']})') or data_user['description'],
+            'is_active': input(f'Is User Active: (Y/N) ({active_status})').upper() == 'Y' or data_user['is_active'],
+            }
+        print(user)
             
     @classmethod
     def delete(cls):
