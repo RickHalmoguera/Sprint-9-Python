@@ -69,7 +69,29 @@ class Model(ABC):
             'is_active': input('Is User Active: (Y/N)').upper() == 'Y',
         }
         
-        print(new_user)
+        connection = connectToDb()
+        try:
+            cursor = connection.cursor()
+
+            placeholders = ', '.join(['%s'] * len(new_user))
+            columns = ', '.join(new_user.keys())
+            values = list(new_user.values())
+
+            query = f'''
+            INSERT INTO {cls.table}
+            ({columns}) VALUES ({placeholders})
+            '''
+            cursor.execute(query, values)
+            connection.commit()
+
+            print('User created')
+
+        except Exception as e:
+            print(f'There was an error during process: {e}')
+
+        finally:
+            if connection.is_connected():
+                connection.close()
         
     @classmethod
     def update(cls):
@@ -95,25 +117,24 @@ class Model(ABC):
             try:
                 cursor = connection.cursor()
 
+                placeholders = ', '.join([f'{key} = %s' for key in user.keys()])
                 query = f'''
                 UPDATE {cls.table}
-                SET photo = %s, first_name = %s, last_name = %s, job_title = %s, email = %s, phone = %s,
-                start_date = %s, description = %s, is_active = %s
+                SET {placeholders}
                 WHERE id = %s
                 '''
                 values = list(user.values()) + [id]
                 cursor.execute(query, values)
                 connection.commit()
 
-                print('Datos actualizados correctamente.')
+                print('User updated')
 
             except Exception as e:
-                print(f'Error al actualizar datos: {e}')
+                print(f'There was an error during process: {e}')
 
             finally:
                 if connection.is_connected():
                     connection.close()
-                    print('Conexión cerrada')
             
     @classmethod
     def delete(cls):

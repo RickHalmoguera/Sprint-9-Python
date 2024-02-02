@@ -15,7 +15,8 @@ actions={
     'list_users': Users.list,
     'view_user' : Users.view,
     'delete_user': Users.delete,
-    'update_user': Users.update
+    'update_user': Users.update,
+    'create_user' : Users.create
 }
 
 if user_choice in actions:
